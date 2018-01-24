@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CA1</title>
+		<link rel="stylesheet" type="text/css" href="myStyle.css">
+	</head>
+	<body>
+
+		<div id="Leaderboard">
+			<h1>Leaderboard</h1>
+
+			<button id="submitScoreButton" onclick="submitScore(username, playerHighestScore)">Submit Score</button>
+			<button id="highScoreButton" onclick="getScores()">Show High Scores</button>
+			<button id="latestScoresButton" onclick="getLatestScores()">Show latest Scores</button>
+			<button id="deleteMyScoresButton" onclick="deleteMyScores(username)">Delete my Scores</button>
+
+			<p id="playerHighestScoreText">Your Highest Score: </p>	
+
+			<h3 id="counter"></h3>
+			<div id="myList"></div>
+		</div>
+
+	</body>
+	<script src="game.js"></script>
+	<!--<script src="client.js"></script>-->
+	
+    <h1 id="guide">Use the arrow keys to move left and right <br> Use Space to shoot </h1>
+</html>
